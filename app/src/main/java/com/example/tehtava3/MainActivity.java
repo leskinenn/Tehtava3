@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 adapteri.notifyDataSetChanged();
             }
         });
-        //adapteri = new Adapter(this,R.layout.listview_row,dates);
+       
 
 
     }
