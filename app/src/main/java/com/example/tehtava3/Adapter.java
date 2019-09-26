@@ -1,6 +1,7 @@
-package com.example.tehtava3;
+/*package com.example.tehtava3;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,7 +23,6 @@ public class Adapter extends ArrayAdapter<Date> {
     public Button lisaa;
     private Context konteksti;
     private ArrayList<Date> dates = new ArrayList<>();
-    private ArrayList<String> vitunvittu = new ArrayList<>();
 
     public Adapter(@NonNull Context context, ArrayList<Date> pvm) {
         super(context, 0, pvm);
@@ -32,9 +32,8 @@ public class Adapter extends ArrayAdapter<Date> {
     @Override
 
     public View getView(final int position, View convertView, ViewGroup parent){
-        TextView teksti = (TextView) convertView.findViewById(R.id.textView1);
+        TextView teksti = (TextView) convertView.findViewById(android.R.id.simple_list_item_1);
         teksti.setText(dates.get(0).toString());
-
         LayoutInflater inflater = (LayoutInflater)konteksti.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View rowView=inflater.inflate(R.layout.listview_row,null,true);
         final TextView nameTextField = (TextView) rowView.findViewById(R.id.textView1);
@@ -42,4 +41,4 @@ public class Adapter extends ArrayAdapter<Date> {
         return convertView;
     }
 
-}
+}*/
